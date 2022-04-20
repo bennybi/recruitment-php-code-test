@@ -1,35 +1,86 @@
-[2022-04-20T10:35:42+00:00][info] Array
+[2022-04-20T12:38:58+00:00][info] 
+ 2. 在 \APP\SERVICE\PRODUCTHANDLER 類，編寫一個函數，把商品以金額排序（由大至小），並篩選商品類種是 “DESSERT” 的商品。
+[2022-04-20T12:38:58+00:00][info] ARRAY
 (
-    [id] => 1
-    [username] => hello world1
+    [1] => ARRAY
+        (
+            [ID] => 5
+            [NAME] => NEW YORK CHEESE CAKE
+            [TYPE] => DESSERT
+            [PRICE] => 40
+            [CREATE_AT] => 2021-04-19 14:38:00
+        )
+
+    [2] => ARRAY
+        (
+            [ID] => 4
+            [NAME] => CUP CAKE
+            [TYPE] => DESSERT
+            [PRICE] => 35
+            [CREATE_AT] => 2021-04-18 08:45:00
+        )
+
 )
 
 
-[2022-04-20T10:35:42+00:00][error] error info
-[2022-04-20T10:37:22+00:00][info] Array
+[2022-04-20T12:38:58+00:00][info] 
+ 3. 在 \APP\SERVICE\PRODUCTHANDLER 類，編寫一個函數，把創建日期轉換為 UNIX TIMESTAMP。
+[2022-04-20T12:38:58+00:00][info] ARRAY
 (
-    [id] => 1
-    [username] => hello world1
+    [0] => ARRAY
+        (
+            [ID] => 1
+            [NAME] => COCA-COLA
+            [TYPE] => DRINKS
+            [PRICE] => 10
+            [CREATE_AT] => 1618912800
+        )
+
+    [1] => ARRAY
+        (
+            [ID] => 2
+            [NAME] => PERSI
+            [TYPE] => DRINKS
+            [PRICE] => 5
+            [CREATE_AT] => 1618995600
+        )
+
+    [2] => ARRAY
+        (
+            [ID] => 3
+            [NAME] => HAM SANDWICH
+            [TYPE] => SANDWICH
+            [PRICE] => 45
+            [CREATE_AT] => 1618945200
+        )
+
+    [3] => ARRAY
+        (
+            [ID] => 4
+            [NAME] => CUP CAKE
+            [TYPE] => DESSERT
+            [PRICE] => 35
+            [CREATE_AT] => 1618735500
+        )
+
+    [4] => ARRAY
+        (
+            [ID] => 5
+            [NAME] => NEW YORK CHEESE CAKE
+            [TYPE] => DESSERT
+            [PRICE] => 40
+            [CREATE_AT] => 1618843080
+        )
+
+    [5] => ARRAY
+        (
+            [ID] => 6
+            [NAME] => LEMON TEA
+            [TYPE] => DRINKS
+            [PRICE] => 8
+            [CREATE_AT] => 1617564180
+        )
+
 )
 
 
-[2022-04-20T10:37:22+00:00][debug] debug info
-[2022-04-20T10:37:22+00:00][error] error info
-[2022-04-20T10:42:07+00:00][info] Array
-(
-    [id] => 1
-    [username] => hello world1
-)
-
-
-[2022-04-20T10:42:07+00:00][debug] debug info
-[2022-04-20T10:42:07+00:00][error] error info
-[2022-04-20T10:46:27+00:00][info] ARRAY
-(
-    [ID] => 1
-    [USERNAME] => HELLO WORLD1
-)
-
-
-[2022-04-20T10:46:27+00:00][debug] DEBUG INFO
-[2022-04-20T10:46:27+00:00][error] ERROR INFO

@@ -15,7 +15,7 @@ class ProductHandlerTest extends TestCase {
 
     public function __construct() {
         parent::__construct();
-        $this->_logger = new AppLogger('log4php');
+        $this->_logger = new AppLogger(AppLogger::TYPE_LOGTP);
     }
 
     private $products = [
@@ -82,19 +82,19 @@ class ProductHandlerTest extends TestCase {
      * 2. 在 \App\Service\ProductHandler 類，編寫一個函數，把商品以金額排序（由大至小），並篩選商品類種是 “dessert” 的商品。
      */
     public function testSortAndFilters() {
-//        $result = ProductHandler::sortAndFilters($this->products, 'price', ['type' => 'Dessert']);
-////        $result = ProductHandler::sortAndFilters($this->products, 'price', ['type' => 'Dessert', 'name' => 'Persi']);
-//        $this->_logger->info("\n 2. 在 \App\Service\ProductHandler 類，編寫一個函數，把商品以金額排序（由大至小），並篩選商品類種是 “dessert” 的商品。");
-//        $this->_logger->info(print_r($result, true) . "\n");
+        $result = ProductHandler::sortAndFilters($this->products, 'price', ['type' => 'Dessert']);
+//        $result = ProductHandler::sortAndFilters($this->products, 'price', ['type' => 'Dessert', 'name' => 'Persi']);
+        $this->_logger->info("\n 2. 在 \App\Service\ProductHandler 類，編寫一個函數，把商品以金額排序（由大至小），並篩選商品類種是 “dessert” 的商品。");
+        $this->_logger->info(print_r($result, true) . "\n");
     }
 
     /**
      * 3. 在 \App\Service\ProductHandler 類，編寫一個函數，把創建日期轉換為 unix timestamp。
      */
     public function testConvertToTimestamp() {
-//        ProductHandler::convertToTimestamp($this->products);
-//        $this->_logger->info("\n 3. 在 \App\Service\ProductHandler 類，編寫一個函數，把創建日期轉換為 unix timestamp。");
-//        $this->_logger->info(print_r($this->products, true) . "\n");
+        ProductHandler::convertToTimestamp($this->products);
+        $this->_logger->info("\n 3. 在 \App\Service\ProductHandler 類，編寫一個函數，把創建日期轉換為 unix timestamp。");
+        $this->_logger->info(print_r($this->products, true) . "\n");
     }
 
 }
